@@ -1,10 +1,129 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Website</title>
-    <link rel="stylesheet" href="style.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3efff;
+            color: #30234d;
+        }
+
+        header {
+            background: linear-gradient(135deg, #512b81, #7952b3, #a17bd5);
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        nav {
+            background: #30204d;
+            padding: 16px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 25px;
+            font-size: 17px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #d6b8ff;
+        }
+
+        .home {
+            max-width: 850px;
+            margin: 65px auto;
+            padding: 50px 30px;
+            text-align: center;
+            background: white;
+            border-radius: 18px;
+            box-shadow: 0 5px 20px rgba(48, 32, 77, 0.15);
+        }
+
+        .home h2 {
+            color: #7952b3;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .home h3 {
+            color: #512b81;
+            font-size: 25px;
+            margin-bottom: 18px;
+        }
+
+        .home p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            color: #625574;
+        }
+
+        button {
+            background: linear-gradient(135deg, #7952b3, #512b81);
+            color: white;
+            border: none;
+            padding: 13px 30px;
+            border-radius: 25px;
+            font-size: 17px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #30204d;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: #30204d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 27px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+                font-size: 15px;
+            }
+
+            .home {
+                margin: 30px 15px;
+                padding: 35px 20px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -27,17 +146,23 @@
 
     <p>
         Welcome to my personal website. This website contains
-        my resume and bio-data.
+        my resume and bio-data. Explore my educational qualifications,
+        skills, personal details and achievements.
     </p>
 
     <button onclick="welcomeMessage()">Click Here</button>
 </section>
 
 <footer>
-    <p>&copy; 2026 Your Name</p>
+    <p>&copy; 2026 Your Name. All Rights Reserved.</p>
 </footer>
 
-<script src="script.js"></script>
+<script>
+    function welcomeMessage() {
+        alert("Welcome to My Personal Website!");
+    }
+</script>
 
 </body>
 </html>
+```
