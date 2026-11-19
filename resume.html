@@ -1,10 +1,157 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
-    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f4f0fa;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #6a4c93, #9b72cf);
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        header h1 {
+            font-size: 32px;
+        }
+
+        /* Navigation */
+        nav {
+            background: #382653;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #e0c3fc;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 900px;
+            margin: 35px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(70, 40, 100, 0.12);
+        }
+
+        /* Section Headings */
+        .container h2 {
+            color: #6a4c93;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #d8c4ed;
+            padding-bottom: 10px;
+        }
+
+        /* Paragraphs */
+        .container p {
+            line-height: 1.8;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table th,
+        table td {
+            border: 1px solid #e2d8ed;
+            padding: 14px;
+            text-align: left;
+        }
+
+        table th {
+            background: #6a4c93;
+            color: white;
+        }
+
+        table td {
+            background: #fcfaff;
+            color: #444;
+        }
+
+        table tr:hover td {
+            background: #f2eafa;
+        }
+
+        /* Lists */
+        ul {
+            margin-left: 25px;
+            line-height: 2;
+        }
+
+        ul li {
+            padding-left: 5px;
+        }
+
+        ul li::marker {
+            color: #8b5fbf;
+        }
+
+        /* Footer */
+        footer {
+            background: #382653;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            margin-top: 30px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+
+            .container {
+                margin: 20px 12px;
+                padding: 18px;
+            }
+
+            nav a {
+                margin: 0 8px;
+                font-size: 14px;
+            }
+
+            table th,
+            table td {
+                padding: 8px;
+                font-size: 12px;
+            }
+
+        }
+
+    </style>
 </head>
 
 <body>
@@ -110,3 +257,4 @@
 
 </body>
 </html>
+```
