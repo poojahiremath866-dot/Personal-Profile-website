@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +6,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Bio-data</title>
-    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f4f0fa;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #6a4c93, #9b72cf);
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        header h1 {
+            font-size: 32px;
+        }
+
+        nav {
+            background: #382653;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #e0c3fc;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 35px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(70, 40, 100, 0.12);
+        }
+
+        .container h2 {
+            color: #6a4c93;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            border-bottom: 2px solid #d8c4ed;
+            padding-bottom: 10px;
+        }
+
+        .biodata {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        .biodata th,
+        .biodata td {
+            border: 1px solid #e2d8ed;
+            padding: 14px;
+            text-align: left;
+        }
+
+        .biodata th {
+            background: #eee5f7;
+            color: #50376e;
+            width: 35%;
+        }
+
+        .biodata td {
+            background: #fcfaff;
+            color: #444;
+        }
+
+        .biodata tr:hover td {
+            background: #f2eafa;
+        }
+
+        .container p {
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        footer {
+            background: #382653;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+
+            .container {
+                margin: 20px 12px;
+                padding: 18px;
+            }
+
+            nav a {
+                margin: 0 8px;
+                font-size: 14px;
+            }
+
+            .biodata th,
+            .biodata td {
+                padding: 10px;
+                font-size: 14px;
+            }
+
+        }
+
+    </style>
 </head>
 
 <body>
@@ -98,3 +222,4 @@
 
 </body>
 </html>
+```
